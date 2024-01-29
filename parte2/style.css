@@ -1,0 +1,182 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para a barra de cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header__title {
+    font-size: 24px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.article {
+    flex: 2;
+}
+
+.article__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article__content {
+    line-height: 1.6;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.sidebar__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar__list {
+    list-style: none;
+}
+
+.sidebar__item {
+    margin-bottom: 5px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header__title {
+    font-size: 20px;
+    animation: scaleIn 1s ease-out
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.nav__item {
+    margin-right: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #ffcc00;
+}
+
+.article__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    animation: rotateIn 1s ease-in-out;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-45deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}

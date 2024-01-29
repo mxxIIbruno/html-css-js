@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MAC II</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">Logo</div>
+        <div class="icon-separator"></div>
+        <div class="search-bar">
+            <input type="text", placeholder="Digite alguma coisa">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icon-separator"></div>
+        <div class="user-menu"><i class="fa fa-user"></i></div>
+        <div class="icon-grid" id="iconGrid">
+            <div class="icon-row">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="icon-row">
+                <i class="fas fa-newspaper"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-cloud"></i>
+            </div>
+            <div class="icon-row">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+    </div>
+    <div class="texto">
+        <h1>Olá sejam bem-vindos a minha página</h1>
+        <h2>Desenvolvido por mim (Bruno da Silva Santos)</h2>
+        <p>
+            Olá, eu sou Bruno da Silva Santos, um entusiasta de 27 anos apaixonado
+            por programação, atualmente residindo em Osasco - SP. Embora esteja em
+            um período de transição profissional, busco ativamente oportunidades na
+            área de programação para contribuir com meu conhecimento e habilidades.
+
+            Durante minha jornada, tive a oportunidade enriquecedora de adquirir
+            experiência em um escritório, onde desempenhei funções no departamento
+            de TI como suporte técnico. Embora não tenha sido registrado, essa
+            experiência foi fundamental para meu desenvolvimento profissional e me
+            motivou a buscar crescimento contínuo.
+
+            No meu dia a dia, dedico a maior parte do tempo ao estudo e organização
+            no meu quarto. Sou movido pela paixão em me tornar um desenvolvedor
+            excepcional, almejando participar das melhores empresas e adquirir as
+            melhores experiências no campo da programação.
+
+            Minha personalidade é caracterizada pela paciência, calma e capacidade
+            de oferecer ideias inovadoras à medida que me adapto aos desafios.
+            Além disso, tenho um forte desejo de contribuir para o sucesso da minha
+            família e compartilhar suas conquistas.
+
+            Estou animado com a jornada que está por vir e comprometido em crescer
+            como profissional de TI. Estou aberto a oportunidades e ansioso para
+            enfrentar novos desafios que me permitam expandir minhas habilidades e
+            conhecimentos. Junte-se a mim nesta jornada de aprendizado e crescimento!
+        </p>
+    </div>
+    <div>
+
+    </div>
+</body>
+<script>
+    let icon = document.querySelector(".menuBtn")
+    document.getElementById("menuBtn").addEventListener("click", function() {
+        document.getElementById("iconGrid").style.display = "block";
+    });
+
+    document.querySelectorAll(".icon-row i").forEach(function(icon) {
+        icon.addEventListener("click", function() {
+            document.getElementById("iconGrid").style.display = "none";
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,229 @@
+@import url('https://font-googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #32CD32;
+}
+
+.main-footer {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2f2b53;
+}
+
+.main-footer ul {
+    list-style: none;
+}
+
+.main-footer h1 {
+    font-size: 22px;
+    line-height: 117%;
+    color: #ffffff;
+    margin-bottom: 10px;
+    max-width: 500;
+}
+
+.main-footer h2 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.main-footer ul li a {
+    color: #ffffffcc;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2f2b53;
+    border-top: 1px solid #1d2742;
+    font-size: 17px;
+    padding: 15px 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logoinfo p {
+    color: #6EB981;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact-details li a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.contact-details .fa {
+    color: #f1f1f1;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.sociallogos {
+    padding: 20px 0;
+}
+
+.sociallogos .logobox a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.com ul li {
+    padding: 5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+    .main-footer {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .sociallogos {
+        padding: 20px 0;
+    }
+
+    .com {
+        padding: 20px 0;
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slider .controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.slider .controls>div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider .controls>.up:active {
+    transform: translateY(-10px);
+}
+
+.slider .controls>.down:active {
+    transform: translateY(10px);
+}
+
+.slider .controls>.up {
+    top: 0px;
+    right: 0px;
+    background: #fff;
+    color: #111;
+    border-radius: 0 5px 5px 0;
+}
+
+.slider .controls>.down {
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(#0cbaba, #380036);
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.slider .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slider .wrapper .left,
+.slider .wrapper .right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.slider .wrapper .left>div,
+.slider .wrapper .right>div {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5 ease-in-out;
+}
+
+.slider .wrapper .left>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 90px 0px 40px;
+}
+
+.slider .wrapper .left>div h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    background: -webkit-linear-gradient(90deg, #0cbaba, #380036);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider .wrapper .left>div p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 25px;
+    color: #555;
+    text-align: justify;
+}
+
+.slider .wrapper .right>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: obtain;
+}
+
+.slider .wrapper .right div:nth-child(1) {
+    margin-top: -400vh;
+}

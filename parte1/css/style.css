@@ -1,0 +1,122 @@
+/* * {
+    margin: 0;
+} */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #4285f4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.menu-btn,
+.user-menu {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-btn:hover,
+.user-menu:hover {
+    background-color: #ffffff1a;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.icon-separator {
+    width: 10px;
+    height: 24px;
+    background-color: #ffffff;
+    opacity: 0.2;
+}
+
+.serch-bar {
+    display: flex;
+    align-items: center;
+}
+
+.serch-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.serch-bar button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.user-menu i {
+    font-size: 24px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.icon-btn:hover {
+    animation: rotateIcon 0.3s ease-in-out forwards;
+}
+
+@keyframes rotateIcon {
+    to {
+        transfosrm: rotate(90deg);
+    }
+}
+
+.user-menu {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-menu i {
+    font-size: 24px;
+}
+
+.user-menu:hover {
+    background-color: #ffffff1a;
+}
+
+.icon-grid {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #4285f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icon-row {
+    display: flex;
+}
+
+.icon-row i {
+    font-size: 24px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.texto {
+    text-align: left;
+    margin: 20px;
+}
